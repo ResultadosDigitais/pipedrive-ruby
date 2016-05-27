@@ -7,7 +7,9 @@
 
 ## Installation
 
-    gem install pipedrive-ruby
+Put it on your `Gemfile`:
+
+    gem 'pipedrive-ruby', git: 'https://github.com/ContaBoa/pipedrive-ruby.git'
 
 ## Usage
 
