@@ -9,8 +9,9 @@ module Pipedrive
 
     end
 
-    def deals()
-      Deal.all(get "#{resource_path}/#{id}/deals", :everyone => 1)
+    def deals(api_token, params={})
+      res = get "#{resource_path}/#{id}/deals?api_token=#{api_token}", query: params
+      res['data'].nil? ? [] : res['data'].map{|obj| Deal.new(obj)}
     end
   end
 end
