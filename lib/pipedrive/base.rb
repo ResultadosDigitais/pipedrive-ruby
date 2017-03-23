@@ -21,7 +21,7 @@ module Pipedrive
     format :json
 
     extend Forwardable
-    def_delegators 'self.class', :delete, :get, :post, :put, :resource_path, :bad_response
+    def_delegators 'self.class', :delete, :destroy, :get, :post, :put, :resource_path, :bad_response
 
     attr_reader :data
 
@@ -122,6 +122,14 @@ module Pipedrive
         path = api_token ? "#{res_path}?api_token=#{api_token}" : res_path
         res = get path
         res.ok? ? new(res) : bad_response(res,id)
+      end
+
+      def destroy(id, api_token = nil)
+        path = "#{resource_path}/#{id}?api_token=#{api_token}"
+        res = delete path
+        unless res.success?
+          bad_response(res, id)
+        end
       end
 
       def find_by_name(name, api_token = nil, opts={})

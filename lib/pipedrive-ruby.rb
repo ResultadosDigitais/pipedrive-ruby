@@ -24,6 +24,7 @@ require 'pipedrive/user-setting'
 require 'pipedrive/goal'
 require 'pipedrive/user-connection'
 require 'pipedrive/push-notification'
+require 'pipedrive/webhook'
 
 module Pipedrive
 
