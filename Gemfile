@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://resultadosdigitais.jfrog.io/resultadosdigitais/api/gems/gems/'
 # Add dependencies required to use your gem here.
 # Example:
 #   gem "activesupport", ">= 2.3.5"
