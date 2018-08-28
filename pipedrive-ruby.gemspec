@@ -72,42 +72,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = '2.4.8'
   s.summary = 'Ruby wrapper for the Pipedrive API'
 
-  if s.respond_to? :specification_version
-    s.specification_version = 4
-
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0')
-      s.add_runtime_dependency('httparty', ['>= 0'])
-      s.add_runtime_dependency('json', ['>= 1.7.7'])
-      s.add_runtime_dependency('multi_xml', ['>= 0.5.2'])
-      s.add_runtime_dependency('webmock', ['>= 0'])
-      s.add_development_dependency('bundler', ['>= 1.0.0'])
-      s.add_development_dependency('coveralls', ['>= 0'])
-      s.add_development_dependency('jeweler', ['>= 1.8.4'])
-      s.add_development_dependency('rdoc', ['~> 3.12'])
-      s.add_development_dependency('shoulda', ['>= 0'])
-      s.add_development_dependency('simplecov', ['>= 0'])
-    else
-      s.add_dependency('bundler', ['>= 1.0.0'])
-      s.add_dependency('coveralls', ['>= 0'])
-      s.add_dependency('httparty', ['>= 0'])
-      s.add_dependency('jeweler', ['>= 1.8.4'])
-      s.add_dependency('json', ['>= 1.7.7'])
-      s.add_dependency('multi_xml', ['>= 0.5.2'])
-      s.add_dependency('rdoc', ['~> 3.12'])
-      s.add_dependency('shoulda', ['>= 0'])
-      s.add_dependency('simplecov', ['>= 0'])
-      s.add_dependency('webmock', ['>= 0'])
-    end
-  else
-    s.add_dependency('bundler', ['>= 1.0.0'])
-    s.add_dependency('coveralls', ['>= 0'])
-    s.add_dependency('httparty', ['>= 0'])
-    s.add_dependency('jeweler', ['>= 1.8.4'])
-    s.add_dependency('json', ['>= 1.7.7'])
-    s.add_dependency('multi_xml', ['>= 0.5.2'])
-    s.add_dependency('rdoc', ['~> 3.12'])
-    s.add_dependency('shoulda', ['>= 0'])
-    s.add_dependency('simplecov', ['>= 0'])
-    s.add_dependency('webmock', ['>= 0'])
-  end
+  s.add_runtime_dependency('httparty', ['>= 0'])
+  s.add_runtime_dependency('json', ['>= 1.7.7'])
+  s.add_runtime_dependency('multi_xml', ['>= 0.5.2'])
 end
