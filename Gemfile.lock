@@ -1,5 +1,5 @@
 GEM
-  remote: https://resultadosdigitais.jfrog.io/resultadosdigitais/api/gems/gems/
+  remote: https://rubygems.org/
   specs:
     activesupport (5.0.2)
       concurrent-ruby (~> 1.0, >= 1.0.2)
