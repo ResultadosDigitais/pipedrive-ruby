@@ -16,5 +16,6 @@ group :development do
   gem 'rdoc', '~> 3.12'
   gem 'shoulda', '>= 0'
   gem 'simplecov', '>= 0'
+  gem 'test-unit'
   gem 'webmock'
 end
