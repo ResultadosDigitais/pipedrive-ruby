@@ -72,6 +72,13 @@ Gem::Specification.new do |s|
   s.rubygems_version = '2.4.8'
   s.summary = 'Ruby wrapper for the Pipedrive API'
 
+  if s.respond_to?(:metadata)
+    s.metadata['allowed_push_host'] = 'https://resultadosdigitais.jfrog.io/resultadosdigitais/api/gems/gems'
+  else
+    raise 'RubyGems 2.0 or newer is required to protect against ' \
+      'public gem pushes.'
+  end
+
   s.add_runtime_dependency('httparty', ['>= 0'])
   s.add_runtime_dependency('json', ['>= 1.7.7'])
   s.add_runtime_dependency('multi_xml', ['>= 0.5.2'])
